@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Cocogoose-Regular';
+    src: url('../public/fonts/CocogoosePro-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cocogoose-Light';
+    src: url('../public/fonts/CocogoosePro-Light.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cocogoose-SemiLight';
+    src: url('../public/fonts/CocogoosePro-SemiLight.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cocogoose-UltraLight';
+    src: url('../public/fonts/CocogoosePro-UltraLight.otf') format('truetype');
+}
+
+
+.acc-header{
+    @apply lg:px-0 lg:py-0
+    }
+    
+    .acc-body{
+    @apply overflow-hidden lg:block duration-700;
+    }
+    
+    .acc-item.close .acc-body{
+      @apply max-h-0 opacity-0 lg:opacity-100 lg:max-h-fit
+    }
+    
+    .acc-item.open .acc-body{
+      @apply opacity-100 max-h-fit lg:py-0
+    }
+    
+    .acc-header i{
+      @apply duration-300
+    }
+    
+    .acc-item.open .acc-header i{
+      @apply rotate-180;
+    }
+    
+    
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
